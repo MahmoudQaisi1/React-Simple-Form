@@ -1,0 +1,4 @@
+please create another page, the page should contain a 
+form that has firstname, lastname, phone, email and 
+password inputs. The form should have 
+validation for the inputs, using yup schema, and useform hook

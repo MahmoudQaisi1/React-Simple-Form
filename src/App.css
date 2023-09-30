@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Chewy', cursive;
+    color: #252A34;
+    font-size: large;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.App{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #252A34;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #08D9D6;
+    padding: 30px;
+    outline: 5px solid #08D9D6;
+    outline-offset: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App form label{
+    margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.App form input[type='text'], .App form input[type='password'], .App form input[type='tel']{
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid #252A34;
+    margin: 5px;
+    width: 250px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App form input[type='text']:focus, .App form input[type='password']:focus, .App form input[type='tel']:focus{
+    outline: none;
+    border-bottom-color: #FF2E63;
+}
+
+.App form p{
+    color: #FF2E63;
+    font-size: small;
+    margin: 10px;
+    z-index: 1;
+}
+
+.App form input[type='submit']{
+    background-color: #252A34;
+    color: #08D9D6;
+    padding: 5px;
+    border: none;
+    margin: 10px;
+}
+.App form input[type='submit']:hover{
+    background-color: #FF2E63;
+    color: #252A34;
 }
